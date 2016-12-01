@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>BeaconSage Styleguide</title>
+		<link href="./styles.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600|Droid+Sans:400,700" rel="stylesheet">
+	</head>
+	<body>
+		<header class="body__header">
+			<button class="js-menu-show header__menu-toggle">menu</button>
+		</header>
+
+		<aside class="js-side-nav side-nav">
+			<nav class="js-side-nav-container side-nav__container">
+				<button class="js-menu-hide side-nav__hide">close</button>
+				<header class="side-nav__header">
+					Side Nav
+				</header>
+				<ul class="side-nav__content">
+					<li><a class="js-side-nav__link" href="/">Introduction</a></li>
+					<li><a class="js-side-nav__link" href="#/typography">Typography</a></li>
+					<li><a class="js-side-nav__link" href="#/forms">Form Elements</a></li>
+					<li><a class="js-side-nav__link" href="#/navigation">Navigation</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<aris-header>
+			<h1 slot="h1">Hello!</h1>
+		</aris-header>
+
+		<app-router init="manual">
+			<app-route path="/" import="/partials/home-page.html" template></app-route>
+			<app-route path="/typography" import="/partials/typography-page.html" template></app-route>
+			<app-route path="/forms" import="/partials/forms-page.html" template></app-route>
+			<app-route path="/navigation" import="/partials/navigation-page.html" template></app-route>
+
+    		<app-route path="*" import="/partials/not-found-page.html" template></app-route>
+		</app-router>
+
+		<script defer="defer" src="./js/syntaxhighlighter.js"></script>
+		<script defer="defer" src="https://rawgit.com/webcomponents/custom-elements/master/custom-elements.min.js"></script>
+		<script defer="defer" src="https://rawgit.com/webcomponents/shadydom/master/shadydom.min.js"></script>
+		<script defer="defer" src="https://rawgit.com/webcomponents/shadycss/master/shadycss.min.js"></script>
+		<script defer="defer" src='./js/app.js'></script>
+	</body>
+</html>

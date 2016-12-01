@@ -1,0 +1,41 @@
+:host { 
+    display: block;
+    position: relative;
+}
+section {
+    background-color:#b82216;
+    background: url("/img/bs_header_background.png") center center;
+    background-size:cover;
+    padding:25px 15px;
+}
+.caret-right {
+    width: 0;
+    height: 0;
+    display: none;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+    margin: 0px 5px;
+    position: relative;
+    top: -7px;
+}
+.caret-visible {
+    display:inline-block;
+}
+#arisHeader ::slotted(h1)  {
+    color:white;
+    margin:0px !important;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    display: inline-block;
+}
+#arisHeader ::slotted(h2)  {
+    color:white;
+    margin:0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    display: inline-block;
+}
